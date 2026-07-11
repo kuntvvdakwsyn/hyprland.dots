@@ -21,7 +21,6 @@ window#waybar {
     color: @fg;
 }
 
-/* toate modulele arata la fel - cutie cu fundal, padding, margin, radius */
 #clock,
 #custom-my-power,
 #workspaces,
@@ -39,7 +38,6 @@ window#waybar {
     border-radius: 10px;
 }
 
-/* butoanele din workspaces raman fara fundal propriu, doar culoare text */
 #workspaces button {
     padding: 0 6px;
     color: @cyn;

@@ -32,7 +32,9 @@
             "(.*)discord": "󰙯  Discord",
             "(.*)dolphin": "󰉋  Files",
             "(.*)code": "󰨞  VS Code",
-            "": "󰇄  Desktop"
+            "(.*)Foot": "󰆍  Terminal",
+            "(.*)waybar": "󱂬  Waybar",
+            "": "󰇄   Desktop"
         }
     },
 

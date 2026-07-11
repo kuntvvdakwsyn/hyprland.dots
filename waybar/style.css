@@ -17,80 +17,88 @@
 }
 
 window#waybar {
-    background-color: @bg;
+    background-color: transparent;
     color: @fg;
 }
 
+/* toate modulele arata la fel - cutie cu fundal, padding, margin, radius */
+#clock,
+#custom-my-power,
+#workspaces,
+#window,
+#hyprland-window,
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray {
+    background-color: @bg;
+    padding: 2px 12px;
+    margin: 4px 3px;
+    border-radius: 10px;
+}
+
+/* butoanele din workspaces raman fara fundal propriu, doar culoare text */
 #workspaces button {
     padding: 0 6px;
     color: @cyn;
     background: transparent;
     border-bottom: 3px solid @bg;
 }
-
 #workspaces button.active {
     color: @cyn;
     border-bottom: 3px solid @mag;
 }
-
 #workspaces button.empty {
     color: @wht;
 }
-
 #workspaces button.empty.active {
-    color: @cyn;
+    color: @wht;
     border-bottom: 3px solid @mag;
-}
-#clock,
-#battery,
-#cpu,
-#memory,
-#network,
-#pulseaudio,
-#battery,
-#tray {
-    padding: 0 8px;
-    color: @white;
 }
 
 #custom-sep {
-    color: @brblk; 
+    color: @brblk;
 }
+
 #clock {
     color: @cyn;
     border-bottom: 4px solid @cyn;
 }
-
+#workspaces {
+    border-bottom: 4px solid @mag;
+}
+#hyprland-window {
+    color: @grn;
+    border-bottom: 4px solid @grn;
+}
 #battery {
     color: @mag;
     border-bottom: 4px solid @mag;
 }
-
 #disk {
     color: @ylw;
     border-bottom: 4px solid @ylw;
 }
-
 #memory {
     color: @mag;
     border-bottom: 4px solid @mag;
 }
-
 #cpu {
     color: @grn;
     border-bottom: 4px solid @grn;
 }
-
 #network {
     color: @blu;
     border-bottom: 4px solid @blu;
 }
 #pulseaudio {
-    color: @mag; 
+    color: @mag;
+    border-bottom: 4px solid @mag;
+}
+#window {
+    color: @mag;
     border-bottom: 4px solid @mag;
 }
 
-#battery {
-    color: @blu;
-    border-bottom: 4px solid @blu;
-}

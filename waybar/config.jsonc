@@ -8,31 +8,19 @@
     "spacing": 4,
 
     "modules-left": [
-    "custom/sep",
     "custom/my-power",
-    "custom/sep",
     "hyprland/workspaces",
-    "custom/sep",
     "hyprland/window",
-    "custom/sep"
 ],
 "modules-center": [
-    "custom/sep",
     "clock",
-    "custom/sep"
 
 ],
 
 "modules-right": [
-    "custom/sep",
     "network",
-    "custom/sep",
     "pulseaudio",
-    "custom/sep",
     "battery", 
-    "custom/sep",
-    "memory",
-    "custom/sep",
-    "tray"
+    "memory"
 ]
 }

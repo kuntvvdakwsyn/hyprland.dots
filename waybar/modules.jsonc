@@ -1,13 +1,13 @@
 {
-     "hyprland/workspaces": {
-    "disable-scroll": true,
-    "all-outputs": true,
-    "warp-on-scroll": false,
-    "format": "{name}",
-    "persistent-workspaces" : {
-        "*": 5
-    }
-},
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": "{name}",
+        "persistent-workspaces" : {
+            "*": 5
+        }
+    },
     "backlight": {
         "device": "intel_backlight",
         "format": "{icon}  {percent}%",
@@ -17,9 +17,9 @@
         "on-scroll-down": "brightnessctl set 5%-"
     },
     "custom/my-power": {
-    "format": " ⏻ ",
-    "tooltip": false,
-    "on-click": "/home/nixa/.config/waybar/power.sh"
+        "format": " ⏻ ",
+        "tooltip": false,
+        "on-click": "/home/nixa/.config/waybar/power.sh"
     },
 
     "hyprland/window": {
@@ -110,15 +110,16 @@
     "memory": {
         "format": "Mem: {used} GIB"
     },
+
     "temperature": {
         "critical-threshold": 80,
         "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""]
-    },
+        "format-icons": ["", "", ""],
         "states": {
-        "good": 80,
-        "warning": 30,
-        "critical": 15
+            "good": 80,
+            "warning": 30,
+            "critical": 15
+        }
     },
     "battery": {
         "states": {
@@ -132,15 +133,15 @@
         "format-icons": [" ", " ", " ", " ", " "]
     },
     "power-profiles-daemon": {
-      "format": "{icon}",
-      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-      "tooltip": true,
-      "format-icons": {
-        "default": "",
-        "performance": "",
-        "balanced": "",
-        "power-saver": ""
-      }
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": "",
+            "performance": "",
+            "balanced": "",
+            "power-saver": ""
+        }
     },
     "network": {
         "format": "  Online",
@@ -152,18 +153,19 @@
         "tooltip-format-disconnected": "No connection"
     },
     "custom/sep": {
-    "format": "|",
-    "interval": 0,
-    "tooltip": false
+        "format": "|",
+        "interval": 0,
+        "tooltip": false
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
-        "format-muted": "󰝟 Mute",
+        "format-muted": "󰝟 muted",
         "format-icons": {
             "default": ["󰕿", "󰖀", "󰕾"]
         },
-        "scroll-step": 5,
-        "on-click": "pavucontrol"
+        "on-click": "pavucontrol",
+        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%"
     },
     "custom/media": {
         "format": "{icon} {text}",
@@ -179,14 +181,14 @@
     },
     "custom/power": {
         "format" : " ⏻ ",
-		"tooltip": false,
-		"menu": "on-click",
-		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
-		"menu-actions": {
-			"shutdown": "shutdown",
-			"reboot": "reboot",
-			"suspend": "systemctl suspend",
-			"hibernate": "systemctl hibernate"
-		}
+        "tooltip": false,
+        "menu": "on-click",
+        "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
+        "menu-actions": {
+            "shutdown": "shutdown",
+            "reboot": "reboot",
+            "suspend": "systemctl suspend",
+            "hibernate": "systemctl hibernate"
+        }
     }
 }

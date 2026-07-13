@@ -21,6 +21,7 @@ window#waybar {
     color: @fg;
 }
 
+/* toate modulele arata la fel - cutie cu fundal, padding, margin, radius */
 #clock,
 #custom-my-power,
 #workspaces,
@@ -40,29 +41,36 @@ window#waybar {
 
 #workspaces button {
     padding: 0 6px;
-    color: @cyn;
+    color: @mag;
     background: transparent;
     border-bottom: 3px solid @bg;
 }
+
 #workspaces button.active {
-    color: @cyn;
     border-bottom: 3px solid @mag;
 }
+
 #workspaces button.empty {
     color: @wht;
 }
+
 #workspaces button.empty.active {
     color: @wht;
     border-bottom: 3px solid @mag;
+}
+
+#custom-my-power {
+    color: @red;
+    border-bottom: 4px solid @mag;
 }
 
 #custom-sep {
     color: @brblk;
 }
 
-#clock {
-    color: @cyn;
-    border-bottom: 4px solid @cyn;
+#clock {  /* cyn */
+    color: @mag;
+    border-bottom: 4px solid @mag;
 }
 #workspaces {
     border-bottom: 4px solid @mag;
@@ -71,7 +79,7 @@ window#waybar {
     color: @grn;
     border-bottom: 4px solid @grn;
 }
-#battery {
+#battery { /* blu */
     color: @mag;
     border-bottom: 4px solid @mag;
 }
@@ -87,9 +95,9 @@ window#waybar {
     color: @grn;
     border-bottom: 4px solid @grn;
 }
-#network {
-    color: @blu;
-    border-bottom: 4px solid @blu;
+#network { /* blu */
+    color: @mag;
+    border-bottom: 4px solid @mag;
 }
 #pulseaudio {
     color: @mag;

@@ -1,1 +1,1 @@
-# hyprland.dots
+# hyprland rice
